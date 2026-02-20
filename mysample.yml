@@ -8,7 +8,7 @@
   - name: install apache2 webserver on debian nodes (sudo apt-get install apache2)
     apt:
      name: apache2
-     state: 
+     state: present
   
   - name: i want to start webserver on debian nodes (sudo service apache2 start)
     service:
