@@ -11,6 +11,6 @@
      state: 
   
   - name: i want to start webserver on debian nodes (sudo service apache2 start)
-    apt:
+    service:
      name: apache2
      state: started
