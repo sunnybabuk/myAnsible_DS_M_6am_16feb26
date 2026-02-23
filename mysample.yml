@@ -16,3 +16,9 @@
      name: apache2
      state: started
     when: ansible_os_family=="Debian"
+
+  - name: i want to install webserver on redhat nodes (sudo yum install httpd)
+    dnf:
+     name: httpd
+     state: present
+    when: ansible_os_family=="RedHat"
