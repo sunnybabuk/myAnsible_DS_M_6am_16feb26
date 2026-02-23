@@ -22,3 +22,9 @@
      name: httpd
      state: present
     when: ansible_os_family=="RedHat"
+
+  - name: i want to start webserver on redhat nodes (sudo service start httpd)
+    service:
+     name: httpd
+     state: started
+    when: ansible_os_family=="RedHat"
