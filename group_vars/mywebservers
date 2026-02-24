@@ -1,3 +1,6 @@
 ---
 mywebpackageforubuntu: apache2
 mywebpackageforredhat: httpd 
+
+myjavapackonubuntu: openjdk-21-jdk
+myjavapackonredhat: java-21-amazon-corretto
