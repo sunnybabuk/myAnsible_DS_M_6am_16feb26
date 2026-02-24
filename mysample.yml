@@ -7,24 +7,24 @@
 
   - name: install apache2 webserver on debian nodes (sudo apt-get install apache2)
     apt:
-     name: {{mywebpackageforubuntu}}
+     name: "{{mywebpackageforubuntu}}"
      state: present
     when: ansible_os_family=="Debian"
   
   - name: i want to start webserver on debian nodes (sudo service apache2 start)
     service:
-     name: {{mywebpackageforubuntu}}
+     name: "{{mywebpackageforubuntu}}"
      state: started
     when: ansible_os_family=="Debian"
 
   - name: i want to install webserver on redhat nodes (sudo yum install httpd)
     dnf:
-     name: {{mywebpackageforredhat}}
+     name: "{{mywebpackageforredhat}}"
      state: present
     when: ansible_os_family=="RedHat"
 
   - name: i want to start webserver on redhat nodes (sudo service start httpd)
     service:
-     name: {{mywebpackageforredhat}}
+     name: "{{mywebpackageforredhat}}"
      state: started
     when: ansible_os_family=="RedHat"
