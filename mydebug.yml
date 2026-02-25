@@ -4,3 +4,8 @@
   tasks:
   - name: i want to run direct linux commands
     command: sudo apt-get install apache2
+    register: myresult
+
+  - name: i want to display my first task result
+    debug:
+      msg: "{{myresult}}"
