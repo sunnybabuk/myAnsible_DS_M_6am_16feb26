@@ -1,0 +1,6 @@
+---
+- hosts: myhosts
+  become: yes
+  tasks:
+  - name: i want to run direct linux commands
+    command: sudo apt-get install apache2
