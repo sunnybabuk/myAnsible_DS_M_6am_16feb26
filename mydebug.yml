@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.41.253s
+- hosts: 172.31.41.253
   become: yes
   tasks:
   - name: i want to run direct linux commands
