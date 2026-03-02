@@ -2,4 +2,4 @@
     - name: i want to create a file
       file:
         path: /home/sunny/myfirstfile
-        staate: touch
+        state: touch
