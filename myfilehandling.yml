@@ -4,4 +4,6 @@
     tasks:
     - include_tasks: myfile.yml
     - name: install apache2
-      staate: present
+      apt:
+        name: apache2
+        state: present
