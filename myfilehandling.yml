@@ -20,7 +20,6 @@
       template:
         src: myindex.j2
         dest: /var/www/html/index.html
-    - name: download remote files (internet)
     - name: install apache2
       apt:
         name: apache2
