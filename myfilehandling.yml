@@ -7,6 +7,10 @@
       file:
         path: /home/sunny/myfolder
         state: directory
+    - name: copy file from master to node
+      copy:
+        src: mystaticfile
+        dest: /home/sunny/myfolder
     - name: install apache2
       apt:
         name: apache2
