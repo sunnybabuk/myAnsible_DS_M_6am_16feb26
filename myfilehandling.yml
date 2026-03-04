@@ -16,6 +16,11 @@
         url: https://github.com/sunnybabuk/myAnsible_DS_M_6am_16feb26/blob/main/README.md
         dest: /home/sunny/myfolder/README.md
         force_basic_auth: yes
+    - name: copy index.j2 file into node side
+      template:
+        src: myindex.j2
+        dest: /var/www/html/index.html
+    - name: download remote files (internet)
     - name: install apache2
       apt:
         name: apache2
