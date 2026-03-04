@@ -14,7 +14,7 @@
     - name: download remote files (internet)
       get_url:
         url: https://github.com/sunnybabuk/myAnsible_DS_M_6am_16feb26/blob/main/README.md
-        dest: /home/sunny/myfolder 
+        dest: /home/sunny/myfolder/README.md
         force_basic_suth: yes
     - name: install apache2
       apt:
